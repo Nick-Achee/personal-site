@@ -49,7 +49,7 @@ export default function MyApp(props) {
         
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
-      <ThemeProvider theme={theme}><Paper style={{ height: "100vh" }}>
+      <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <div className={classes.root}>
@@ -66,7 +66,7 @@ export default function MyApp(props) {
         </Toolbar>
       </AppBar>
     </div>
-        <Component {...pageProps} /></Paper>
+        <Component {...pageProps} />
       </ThemeProvider>
     </React.Fragment>
   );
