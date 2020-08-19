@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar'
 import {Paper} from '@material-ui/core';
 import { useState } from 'react';
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
-import {AppBar, Toolbar, Switch, Typography } from '@material-ui/core';
+import {AppBar, Toolbar, Switch, Typography, Button  } from '@material-ui/core';
 
 
 
@@ -62,7 +62,7 @@ export default function MyApp(props) {
           </Typography>
           <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}>
             {" "}
-          </Switch>
+          </Switch><Button href="/">Home</Button><Button href="/about">Projects</Button>
         </Toolbar>
       </AppBar>
     </div>

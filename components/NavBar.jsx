@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
-
+import {AppBar, Toolbar, Switch, Typography, Button} from '@material-ui/core';
 import theme from '../src/theme'
 import { useState } from 'react';
 
@@ -31,10 +31,10 @@ export default function NavBar() {
           
          
           <Typography variant="h5"  className={classes.title}>
-            NICK ACHEE
-          </Typography>
+            NICK ACHE
+          </Typography><Button href="/">Home</Button>
           <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}>
-            {" "}
+           
           </Switch>
         </Toolbar>
       </AppBar>
