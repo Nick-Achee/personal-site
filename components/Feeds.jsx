@@ -23,10 +23,9 @@ const itemVariants = {
 };
 
 const vids = [
-  "https://www.youtube.com/embed/QTG0zeEJu3M",
-  "https://www.youtube.com/embed/HRTMFv0W6sA",
-  "https://www.youtube.com/embed/EDPqvrDpico",
-  "https://www.youtube.com/embed/Lg1sKYZg4kc",
+    "https://www.youtube.com/embed/PoQk0NKN4SQ",
+    "https://www.youtube.com/embed/FBw0AuSvqC0",
+    "https://www.youtube.com/embed/yf9_QHJCytk",
 ];
 
 const useStyles = makeStyles(() => ({
@@ -58,7 +57,7 @@ const useStyles = makeStyles(() => ({
     marginRight: "auto",
   },
 }));
-const Stories = () => {
+const Feeds = () => {
   const classes = useStyles();
   return (
     <div className={classes.div}>
@@ -77,7 +76,7 @@ const Stories = () => {
                   exit="hidden"
                   whileHover={{ scale: 1.1 }}>
                   {" "}
-                  <iframe className={classes.ivideo__container} width="216" height="384" src={vids} frameBorder="0" />
+                  <iframe className={classes.ivideo__container} width="256" height="320" src={vids} frameBorder="0" />
                 </motion.div>
               </Grid>
             ))}
@@ -88,4 +87,4 @@ const Stories = () => {
   );
 };
 
-export default Stories;
+export default Feeds;

@@ -62,7 +62,7 @@ export default function MyApp(props) {
           </Typography>
           <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}>
             {" "}
-          </Switch><Button href="/">Home</Button><Button href="/about">Projects</Button>
+          </Switch><Button href="/">Home</Button><Button href="/projects">Projects</Button>
         </Toolbar>
       </AppBar>
     </div>
