@@ -12,17 +12,21 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
     marginBottom: "35%",
-    marginTop: "35%"
-    
+    marginTop: "35%",
   },
 
   body: {
     width: 550,
+    padding: "2%",
+    overflow: "auto",
+    alignItems: "flex-start",
+    backgroundColor: "[]",
+    position: "relative",
   },
 
   great: {
-    paddingBottom: "10%"
-  }
+    paddingBottom: "10%",
+  },
 }));
 
 export default function Index() {
@@ -33,8 +37,11 @@ export default function Index() {
         <Grid item>
           <Avatar className={classes.large} src="/headshotcircle.png" />
         </Grid>
-        <div className={classes.body}>
-          <Typography variant="h4" className={classes.great}>Hey, I'm Nick, nice to meet you 👋</Typography>
+        <Grid item sm={0} md={4} lg={4} />
+        <Grid item sm={12} className={classes.body}>
+          <Typography variant="h4" className={classes.great}>
+            Hey, I'm Nick, <br /> nice to meet you 👋
+          </Typography>
           <Typography variant="h6">
             Digital Marketer of sorts, I can provide solutions for planning content creation, development, and placement
             of content across various web platforms to ensure optimum marketing efficiency. I work well with Adobe
@@ -42,7 +49,7 @@ export default function Index() {
             JavaScript framework Next.js as a current best practice PWA’s offering unparalleled SEO capabilities.
             Extremely adaptable and a world-class Google researcher. Deeply passionate about Innovation.
           </Typography>
-        </div>
+        </Grid>
       </Grid>
       <Copyright />
     </div>
