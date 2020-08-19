@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from "../src/Link";
 import Copyright from "../src/Copyright";
-import { Avatar, Grid } from "@material-ui/core";
+import { Avatar, Grid, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -15,31 +15,37 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "35%",
   },
 
-  body: {
-    width: 550,
-    padding: "2%",
-    overflow: "auto",
-    alignItems: "flex-start",
-    backgroundColor: "[]",
-    position: "relative",
+  paper: {
+    maxWidth: 550,
+    margin: `${theme.spacing(1)}px auto`,
+    padding: theme.spacing(2),
   },
 
-  great: {
+  greet: {
     paddingBottom: "10%",
   },
+
+  root: {
+    
+  }
+
 }));
 
 export default function Index() {
   const classes = useStyles();
   return (
-    <div>
-      <Grid container direction="column" justify="center" alignItems="center">
-        <Grid item>
+    <div style={{ padding: 20 }}>
+      <Grid container direction="column" justify="center" alignItems="center" className={classes.root}> 
+      <Grid item>
           <Avatar className={classes.large} src="/headshotcircle.png" />
-        </Grid>
-        <Grid item sm={0} md={4} lg={4} />
-        <Grid item sm={12} className={classes.body}>
-          <Typography variant="h4" className={classes.great}>
+          </Grid>
+          
+
+      <Paper className={classes.paper}>
+        <Grid container wrap="nowrap" spacing={2}>
+          
+          <Grid item xs>
+          <Typography variant="h4" className={classes.greet}>
             Hey, I'm Nick, <br /> nice to meet you 👋
           </Typography>
           <Typography variant="h6">
@@ -49,9 +55,16 @@ export default function Index() {
             JavaScript framework Next.js as a current best practice PWA’s offering unparalleled SEO capabilities.
             Extremely adaptable and a world-class Google researcher. Deeply passionate about Innovation.
           </Typography>
+          </Grid>
         </Grid>
-      </Grid>
-      <Copyright />
+      </Paper>
+
+
+
+          
+        </Grid>
+     
+      
     </div>
   );
 }
