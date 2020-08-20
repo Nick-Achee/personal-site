@@ -12,7 +12,7 @@ function Footer() {
       <MuiLink color="inherit" href="https://nickachee.com/">
     Made by Nick
       </MuiLink>{' '}
-      {new Date().getFullYear()}. <Link href="mailto:nicholas.achee103@gmail.com">nicholas.achee103@gmail.com</Link>
+      {new Date().getFullYear()}.<br /> <Link href="mailto:nicholas.achee103@gmail.com">nicholas.achee103@gmail.com</Link>
     </Typography>
     )
 }
