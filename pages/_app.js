@@ -9,7 +9,7 @@ import {Paper} from '@material-ui/core';
 import { useState } from 'react';
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Switch, Typography, Button  } from '@material-ui/core';
-
+import Footer from '../components/Footer'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -62,11 +62,12 @@ export default function MyApp(props) {
           </Typography>
           <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}>
             {" "}
-          </Switch><Button href="/">Home</Button><Button href="/projects">Projects</Button>
+          </Switch><Button href="/">Home</Button><Button href="/content">content</Button>
         </Toolbar>
       </AppBar>
+      
     </div>
-        <Component {...pageProps} />
+        <Component {...pageProps} /><Footer />
       </ThemeProvider>
     </React.Fragment>
   );
