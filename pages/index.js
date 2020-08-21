@@ -47,7 +47,7 @@ export default function Index() {
                 Digital Marketer of sorts, I can provide solutions for planning content creation, development, and
                 placement of content across various web platforms to ensure optimum marketing efficiency. I work well
                 with Adobe Creative Cloud, Asana, G Suite, Zapier, Facebook Ads and some experience with landing pages
-                using the React JavaScript framework Next.js as a current best practice for PWA’s offering top-notch SEO
+                using the React JavaScript framework Next.js as a current best practice offering top-notch SEO
                 capabilities. Extremely adaptable and a world-class Google researcher. Deeply passionate about
                 Innovation.
               </Typography>
