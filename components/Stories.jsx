@@ -34,6 +34,8 @@ const useStyles = makeStyles(() => ({
     boxShadow: "10px 10px 30px .25px rgba(0,0,0,0.30)",
     borderRadius: "9px",
     overflow: "hidden",
+    WebkitBorderRadius: "9px",
+    margin: 10,
   },
   container: {
     justifyContent: "space-evenly",
@@ -64,7 +66,6 @@ const Stories = () => {
     <div className={classes.div}>
       <AnimatePresence>
         <Grid container className={classes.container} spacing={2}>
-          
           <AnimatePresence>
             {vids.map((vids, i) => (
               <Grid item container className={classes.bloc} xs={12} lg={1} md={1} spacing={3} key={i}>
