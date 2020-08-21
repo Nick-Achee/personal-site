@@ -25,46 +25,36 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "10%",
   },
 
-  root: {
-    
-  }
-
+  root: {},
 }));
 
 export default function Index() {
   const classes = useStyles();
   return (
     <div style={{ padding: 20 }}>
-      <Grid container direction="column" justify="center" alignItems="center" className={classes.root}> 
-      <Grid item>
+      <Grid container direction="column" justify="center" alignItems="center" className={classes.root}>
+        <Grid item>
           <Avatar className={classes.large} src="/headshotcircle.png" />
-          </Grid>
-          
-
-      <Paper className={classes.paper}>
-        <Grid container wrap="nowrap" spacing={2}>
-          
-          <Grid item xs>
-          <Typography variant="h4" className={classes.greet}>
-            Hey, I'm Nick, <br /> nice to meet you 👋
-          </Typography>
-          <Typography variant="h6">
-            Digital Marketer of sorts, I can provide solutions for planning content creation, development, and placement
-            of content across various web platforms to ensure optimum marketing efficiency. I work well with Adobe
-            Creative Cloud, Asana, G Suite, Zapier, Facebook Ads and some experience with landing pages using the React
-            JavaScript framework Next.js as a current best practice PWA’s offering unparalleled SEO capabilities.
-            Extremely adaptable and a world-class Google researcher. Deeply passionate about Innovation.
-          </Typography>
-          </Grid>
         </Grid>
-      </Paper>
 
-
-
-          
-        </Grid>
-     
-      
+        <Paper className={classes.paper}>
+          <Grid container wrap="nowrap" spacing={2}>
+            <Grid item xs>
+              <Typography variant="h4" className={classes.greet}>
+                Hey, I'm Nick, <br /> nice to meet you 👋
+              </Typography>
+              <Typography variant="h6">
+                Digital Marketer of sorts, I can provide solutions for planning content creation, development, and
+                placement of content across various web platforms to ensure optimum marketing efficiency. I work well
+                with Adobe Creative Cloud, Asana, G Suite, Zapier, Facebook Ads and some experience with landing pages
+                using the React JavaScript framework Next.js as a current best practice for PWA’s offering top-notch SEO
+                capabilities. Extremely adaptable and a world-class Google researcher. Deeply passionate about
+                Innovation.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Paper>
+      </Grid>
     </div>
   );
 }
