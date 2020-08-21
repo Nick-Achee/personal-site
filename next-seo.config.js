@@ -7,7 +7,8 @@ export default {
     openGraph: {
       type: 'website',
       locale: 'en_IE',
-      site_name: 'https://nickachee.com/',
+      url: 'https://nickachee.com',
+      site_name: 'Stories by Nick',
     },
     twitter: {
       handle: '@twitnickl',

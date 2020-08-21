@@ -6,6 +6,7 @@ import Link from "../src/Link";
 import Copyright from "../src/Copyright";
 import { Avatar, Grid, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { NextSeo } from "next-seo";
 
 const useStyles = makeStyles((theme) => ({
   large: {
@@ -28,13 +29,27 @@ const useStyles = makeStyles((theme) => ({
   root: {},
 }));
 
+
 export default function Index() {
   const classes = useStyles();
+  
+  const SEO = {
+    title: "Stories by Nick",
+
+    description: 'Digital marketing laguna beach',
+
+    openGraph: {
+      title: 'Stories by Nick',
+      description: 'Digital marketing laguna beach',
+    }
+  };
+
   return (
-    <div style={{ padding: 20 }}>
+    <main style={{ padding: 20 }}>
+      <NextSeo {...SEO} />
       <Grid container direction="column" justify="center" alignItems="center" className={classes.root}>
         <Grid item>
-          <Avatar className={classes.large} src="/headshotcircle.png" />
+          <Avatar className={classes.large} alt="Nick Achee"src="/headshotcircle.png" />
         </Grid>
 
         <Paper className={classes.paper}>
@@ -44,7 +59,7 @@ export default function Index() {
                 Hey, I'm Nick, <br /> nice to meet you 👋
               </Typography>
               <Typography variant="h6">
-                Digital Marketer of sorts, I can provide solutions for planning content creation, development, and
+              Digital Marketer of sorts, I can provide solutions for planning content creation, development, and
                 placement of content across various web platforms to ensure optimum marketing efficiency. I work well
                 with Adobe Creative Cloud, Asana, G Suite, Zapier, Facebook Ads and some experience with landing pages
                 using the React JavaScript framework Next.js as a current best practice offering blazing fast load
@@ -54,6 +69,6 @@ export default function Index() {
           </Grid>
         </Paper>
       </Grid>
-    </div>
+    </main>
   );
 }
