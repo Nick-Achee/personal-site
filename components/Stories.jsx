@@ -78,7 +78,7 @@ const Stories = () => {
                   exit="hidden"
                   whileHover={{ scale: 1.1 }}>
                   {" "}
-                  <iframe className={classes.ivideo__container} width="216" height="384" src={vids} frameBorder="0" />
+                  <iframe className={classes.ivideo__container} width="180" height="320" src={vids} frameBorder="0" />
                 </motion.div>
               </Grid>
             ))}

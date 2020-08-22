@@ -35,6 +35,8 @@ const useStyles = makeStyles(() => ({
     overflow: "hidden",
     WebkitBorderRadius: "9px",
     margin: 10,
+    
+  
   },
   container: {
     justifyContent: "space-evenly",
@@ -77,7 +79,7 @@ const Feeds = () => {
                   exit="hidden"
                   whileHover={{ scale: 1.1 }}>
                   {" "}
-                  <iframe className={classes.ivideo__container} width="256" height="320" src={vids} frameBorder="0" />
+                  <iframe className={classes.ivideo__container} width="236" height="300" src={vids} frameBorder="0" />
                 </motion.div>
               </Grid>
             ))}
