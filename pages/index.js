@@ -58,11 +58,7 @@ export default function Index() {
                 Hey, I'm Nick, <br /> nice to meet you 👋
               </Typography>
               <Typography variant="h6">
-                Digital Marketer of sorts, I can provide solutions for planning content creation, development, and
-                placement of content across various web platforms to ensure optimum marketing efficiency. I work well
-                with Adobe Creative Cloud, Asana, G Suite, Zapier, Facebook Ads and some experience with landing pages
-                using the React JavaScript framework Next.js as a current best practice offering blazing fast load
-                times. Extremely adaptable and a world-class Google researcher. Deeply passionate about Innovation.
+              I'm an all-around digital marketer. My speciality is  providing solutions for planning content creation, development, and placement of content across various web platforms to ensure optimum marketing efficiency. I work well with Adobe Creative Cloud, Asana, G Suite, Zapier and Facebook Ads. I also have experience with landing pages using the React JavaScript framework Next.js that offer blazing fast load times. Beyond that, I'm extremely adaptable and a world-class Google researcher who's deeply passionate about Innovation.
               </Typography>
             </Grid>
           </Grid>
