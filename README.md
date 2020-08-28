@@ -12,4 +12,4 @@ Im a noob and but willing to learn.
 
 nickachee.com
 
-#FreeShkreli
+
