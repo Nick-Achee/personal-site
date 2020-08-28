@@ -12,6 +12,7 @@ import { AppBar, Toolbar, Switch, Typography, Button } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
+import * as gtag from '../lib/gtag'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,6 +44,17 @@ export default function MyApp(props) {
       type: darkMode ? "dark" : "light",
     },
   });
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    Router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
+  
+
   return (
     <React.Fragment>
       <Head>
