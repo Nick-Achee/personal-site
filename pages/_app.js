@@ -12,7 +12,8 @@ import { AppBar, Toolbar, Switch, Typography, Button } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
-import * as gtag from '../lib/gtag'
+import * as gtag from "../lib/gtag";
+import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -46,14 +47,13 @@ export default function MyApp(props) {
   });
   useEffect(() => {
     const handleRouteChange = (url) => {
-      gtag.pageview(url)
-    }
-    Router.events.on('routeChangeComplete', handleRouteChange)
+      gtag.pageview(url);
+    };
+    Router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [])
-  
+      Router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, []);
 
   return (
     <React.Fragment>
