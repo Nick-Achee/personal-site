@@ -14,6 +14,7 @@ import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import * as gtag from "../lib/gtag";
 import { useEffect } from "react";
+import Router from "next/router";
 
 const useStyles = makeStyles((theme) => ({
   root: {
