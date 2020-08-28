@@ -1,25 +1,15 @@
-# Next.js example
+## Glad you made it 
 
-## How to use
+Covid caused me to turn to coding. 
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+In between coding lessons im watching Hotz livestream. 
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
-```
+People trying to do cool things inspire me.
 
-Install it and run:
+Currently learning React/NextJS, GraphQL, Framer Motion, MongoDB, Stripe. 
 
-```sh
-npm install
-npm run dev
-```
+Im a noob and but willing to learn.
 
-or:
+nickachee.com
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/nextjs)
-
-## The idea behind the example
-
-[Next.js](https://github.com/zeit/next.js) is a framework for server-rendered React apps.
+#FreeShkreli
