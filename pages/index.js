@@ -55,10 +55,15 @@ export default function Index() {
           <Grid container wrap="nowrap" spacing={2}>
             <Grid item xs>
               <Typography variant="h4" className={classes.greet}>
-                Hey, I'm Austin, <br /> nice to meet you 👋
+                Hey, I'm Nick, <br /> nice to meet you 👋
               </Typography>
               <Typography variant="h6">
-              I'm an all-around digital marketer. My speciality is  providing solutions for planning content creation, development, and placement of content across various web platforms to ensure optimum marketing efficiency. I work well with Adobe Creative Cloud, Asana, G Suite, Zapier and Facebook Ads. I also have experience with landing pages using the React JavaScript framework Next.js that offer blazing fast load times. Beyond that, I'm extremely adaptable and a world-class Google researcher who's deeply passionate about Innovation.
+                I'm an all-around digital marketer. My speciality is providing solutions for planning content creation,
+                development, and placement of content across various web platforms to ensure optimum marketing
+                efficiency. I work well with Adobe Creative Cloud, Asana, G Suite, Zapier and Facebook Ads. I also have
+                experience with landing pages using the React JavaScript framework Next.js that offer blazing fast load
+                times. Beyond that, I'm extremely adaptable and a world-class Google researcher who's deeply passionate
+                about Innovation.
               </Typography>
             </Grid>
           </Grid>
