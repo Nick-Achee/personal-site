@@ -51,9 +51,8 @@ export default function Index() {
           <Grid container wrap="nowrap" spacing={2}>
             <Grid item xs>
               <Typography variant="h4" className={classes.greet}>
-                Hey, I'm Nick, <br /> nice to meet you<Link href="http:/instagram.com">👋</Link>
+                Hey, I'm Nick, <br /> nice to meet you<Link href="https://www.instagram.com/nicholasachee103">👋</Link>
               </Typography>{" "}
-              
               <Typography variant="h6">
                 I'm an all-around digital marketer. My speciality is providing solutions for planning content creation,
                 development, and placement of content across various web platforms to ensure optimum marketing
