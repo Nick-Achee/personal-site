@@ -1,10 +1,6 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Link from "../src/Link";
-import Copyright from "../src/Copyright";
-import { Avatar, Grid, Paper } from "@material-ui/core";
+import { Avatar, Grid, Paper, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { NextSeo } from "next-seo";
 
@@ -55,8 +51,9 @@ export default function Index() {
           <Grid container wrap="nowrap" spacing={2}>
             <Grid item xs>
               <Typography variant="h4" className={classes.greet}>
-                Hey, I'm Nick, <br /> nice to meet you 👋
-              </Typography>
+                Hey, I'm Nick, <br /> nice to meet you<Link href="http:/instagram.com">👋</Link>
+              </Typography>{" "}
+              
               <Typography variant="h6">
                 I'm an all-around digital marketer. My speciality is providing solutions for planning content creation,
                 development, and placement of content across various web platforms to ensure optimum marketing
