@@ -23,10 +23,10 @@ function Footer() {
           {new Date().getFullYear()}.<br />{" "}
           <Link href="mailto:nicholas.achee103@gmail.com">nicholas.achee103@gmail.com</Link>
         </Typography>
-        <Link href="github.com/nick-achee">
+        <Link href="https://www.github.com/nick-achee">
           <Avatar className={classes.small} alt="Nick Achee" src="/GitHub-Mark.png" />
         </Link>
-        <Link href="twitter.com/twitnickl">
+        <Link href="https://www.twitter.com/twitnickl">
           <Avatar className={classes.small} alt="Nick Achee" src="/Twitter.png" />
         </Link>
       </Grid>{" "}
