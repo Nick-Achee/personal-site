@@ -9,6 +9,8 @@ import { AppBar, Toolbar, Switch, Typography, Button } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
+import DarkModeToggle from "react-dark-mode-toggle";
+import Switchr from '../components/Switch.jsx'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,11 +60,11 @@ export default function MyApp(props) {
               <Typography variant="h5" className={classes.title}>
                 NICK ACHEE
               </Typography>
-              <Switch checked={!darkMode} onChange={() => setDarkMode(!darkMode)}>
-                {" "}
-              </Switch>
               <Button href="/">Home</Button>
               <Button href="/content">content</Button>
+              <DarkModeToggle color="primary" size={50} checked={!darkMode} onChange={() => setDarkMode(!darkMode)}>
+                {" "}
+              </DarkModeToggle>
             </Toolbar>
           </AppBar>
         </div>

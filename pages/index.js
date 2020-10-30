@@ -3,6 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import { Avatar, Grid, Paper, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   large: {
@@ -44,7 +45,9 @@ export default function Index() {
       <NextSeo {...SEO} />
       <Grid container direction="column" justify="center" alignItems="center" className={classes.root}>
         <Grid item>
-          <Avatar className={classes.large} alt="Nick Achee" src="/headshotcircle.png" />
+          <Avatar className={classes.large} alt="Nick Achee">
+            <Image src="/headshotcircle.png" width="505" height="500" alt="Profile Picture" />
+          </Avatar>
         </Grid>
 
         <Paper className={classes.paper}>

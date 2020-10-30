@@ -21,9 +21,9 @@ export default function About() {
   return (
     <div>
       <Container>
-      <Paper elevation={3} className={classes.pap}> <Typography variant="h5" align="center">
+      <code> <Typography variant="h6" align="center">
           BRANDED <br /> ADVERTISEMENT
-        </Typography></Paper>
+        </Typography></code>
       </Container>
       <Container>
         

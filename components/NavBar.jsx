@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
 import { AppBar, Toolbar, Switch, Typography, Button } from "@material-ui/core";
 import theme from "../src/theme";
-import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +26,6 @@ export default function NavBar() {
             NICK ACHEE
           </Typography>
           <Button href="/">Home</Button>
-          <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}></Switch>
         </Toolbar>
       </AppBar>
     </div>
