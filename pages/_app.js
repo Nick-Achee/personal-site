@@ -5,12 +5,12 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { useState } from "react";
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles";
-import { AppBar, Toolbar, Switch, Typography, Button } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import DarkModeToggle from "react-dark-mode-toggle";
-import Switchr from '../components/Switch.jsx'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
