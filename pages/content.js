@@ -21,23 +21,23 @@ export default function About() {
   return (
     <div>
       <Container>
-        <Typography variant="h5" align="center">
+      <Paper elevation={3} className={classes.pap}> <Typography variant="h5" align="center">
           BRANDED <br /> ADVERTISEMENT
-        </Typography>
+        </Typography></Paper>
       </Container>
       <Container>
-        <Paper elevation={3} className={classes.pap}>
+        
           <Typography align="center" className={classes.story_info}>
             Instagram or Facebook Stories/Reels <br /> TikTok | Snapchat <br /> (16:9 Vertical Format){" "}
           </Typography>
           <Stories />
-        </Paper>
-        <Paper elevation={3} className={classes.pap}>
+        
+        
           <Typography align="center" className={classes.story_info}>
             Instagram or Facebook Feeds <br /> (4:5 Vertical Format){" "}
           </Typography>
           <Feeds />
-        </Paper>
+        
       </Container>
     </div>
   );

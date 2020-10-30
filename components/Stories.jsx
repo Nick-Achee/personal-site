@@ -1,6 +1,10 @@
-import { Grid, Button } from "@material-ui/core";
+import React from 'react';
+import { Grid, Button, Modal, Backdrop } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { motion, AnimatePresence } from "framer-motion";
+import PropTypes from 'prop-types';
+import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is required for IE 11 support
+
 
 const itemVariants = {
   hidden: (i) => ({
@@ -59,9 +63,60 @@ const useStyles = makeStyles(() => ({
   button: {
     marginRight: "auto",
   },
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+  
+
 }));
+
+const Fade = React.forwardRef(function Fade(props, ref) {
+  const { in: open, children, onEnter, onExited, ...other } = props;
+  const style = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: open ? 1 : 0 },
+    onStart: () => {
+      if (open && onEnter) {
+        onEnter();
+      }
+    },
+    onRest: () => {
+      if (!open && onExited) {
+        onExited();
+      }
+    },
+  });
+
+  return (
+    <animated.div ref={ref} style={style} {...other}>
+      {children}
+    </animated.div>
+  );
+});
+
+Fade.propTypes = {
+  children: PropTypes.element,
+  in: PropTypes.bool.isRequired,
+  onEnter: PropTypes.func,
+  onExited: PropTypes.func,
+};
+
+
+
 const Stories = () => {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className={classes.div}>
       <AnimatePresence>
@@ -75,11 +130,13 @@ const Stories = () => {
                   initial="hidden"
                   animate="visible"
                   custom={i + 1}
+                  onClick={handleOpen}
                   exit="hidden"
                   whileHover={{ scale: 1.1 }}>
                   {" "}
                   <iframe className={classes.ivideo__container} width="180" height="320" src={vids} frameBorder="0" />
                 </motion.div>
+
               </Grid>
             ))}
           </AnimatePresence>

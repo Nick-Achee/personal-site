@@ -58,7 +58,7 @@ export default function MyApp(props) {
               <Typography variant="h5" className={classes.title}>
                 NICK ACHEE
               </Typography>
-              <Switch checked={darkMode} onChange={() => setDarkMode(!darkMode)}>
+              <Switch checked={!darkMode} onChange={() => setDarkMode(!darkMode)}>
                 {" "}
               </Switch>
               <Button href="/">Home</Button>
