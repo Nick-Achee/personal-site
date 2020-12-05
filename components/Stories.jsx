@@ -27,6 +27,7 @@ const itemVariants = {
 };
 
 const vids = [
+  "https://www.youtube.com/embed/d__ILL_r93c",
   "https://www.youtube.com/embed/QTG0zeEJu3M",
   "https://www.youtube.com/embed/HRTMFv0W6sA",
   "https://www.youtube.com/embed/EDPqvrDpico",
