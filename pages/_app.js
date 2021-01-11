@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 import DarkModeToggle from "react-dark-mode-toggle";
-
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   root: {

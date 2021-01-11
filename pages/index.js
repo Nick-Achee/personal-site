@@ -57,12 +57,11 @@ export default function Index() {
                 Hey, I'm Nick, <br /> nice to meet you<Link href="https://www.instagram.com/nicholasachee103">👋</Link>
               </Typography>{" "}
               <Typography variant="h6">
-                I'm an all-around digital marketer. My speciality is providing solutions for planning content creation,
-                development, and placement of content across various web platforms to ensure optimum marketing
-                efficiency. I work well with Adobe Creative Cloud, Asana, G Suite, Zapier and Facebook Ads. I also have
-                experience with landing pages using the React JavaScript framework Next.js that offer blazing fast load
-                times. Beyond that, I'm extremely adaptable and a world-class Google researcher who's deeply passionate
-                about Innovation.
+              I'm an all-around digital strategist. My speciality is providing solutions for planning content creation, development, and placement of content across various web platforms to ensure optimum marketing efficiency. <br /><br />
+
+I work well with Notion, Adobe Creative Cloud, Asana, Google Workspaces, Zapier and  I like to stay up to date with tech trend (who’s using what? where? and what are they saying) 
+<br /><br />
+I also have experience with landing pages using the React JavaScript framework Next.js that offer blazing fast load times. Beyond that, I'm extremely adaptable and a world-class Google researcher who's deeply passionate about Innovation.
               </Typography>
             </Grid>
           </Grid>

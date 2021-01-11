@@ -22,8 +22,8 @@ export default function NavBar() {
     <div className={classes.root}>
       <AppBar color="transparent" position="static">
         <Toolbar>
-          <Typography variant="h5" className={classes.title}>
-            NICK ACHEE
+          <Typography variant="h5" href="/index.js" className={classes.title}><Link href="/index.js"><a><Button href="/index.js">
+            NICK ACHEE</Button></a></Link>
           </Typography>
           <Button href="/">Home</Button>
         </Toolbar>
