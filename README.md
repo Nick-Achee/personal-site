@@ -8,8 +8,6 @@ People trying to do cool things inspire me.
 
 Currently learning React/NextJS, GraphQL, Framer Motion, MongoDB, Stripe. 
 
-Im a noob and but willing to learn.
-
 nickachee.com
 
 
